@@ -1,159 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LexisPro - Abogados Asociados</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-        }
-        h2 {
-            color: #2980b9;
-            border-bottom: 2px solid #2980b9;
-            padding-bottom: 5px;
-        }
-        h3 {
-            color: #16a085;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .contact-info {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 1.2em;
-        }
-        .specialization-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        .specialization-table th, .specialization-table td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        .specialization-table th {
-            background-color: #2980b9;
-            color: #fff;
-        }
-        .hours {
-            margin: 20px 0;
-        }
-        .hours p {
-            margin: 5px 0;
-        }
-    </style>
+    <title>LEXISPRO ABOGADOS ASOCIADOS A.C.</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>LEXISPRO</h1>
         <h2>ABOGADOS ASOCIADOS A.C.</h2>
-        <p>Despacho comprometido a brindar calidad en su servicio de manera profesional, nosotros no lo abandonaremos, lo acompañaremos en todas las etapas procesales de su Juicio.</p>
+    </header>
 
+    <section class="intro">
+        <p>Despacho comprometido a brindar calidad en su servicio de manera profesional, nosotros no lo abandonaremos, lo acompañaremos en todas las etapas procesales de su juicio.</p>
+    </section>
+
+    <section class="content">
         <h2>ÁREAS DE TRABAJO</h2>
-        <h3>ESPECIALIZADOS EN JUICIOS DE SEGUROS</h3>
-        <ul>
-            <li>Cobro a Compañías de Seguros</li>
-        </ul>
-
-        <h3>ASUNTOS MERCANTILES</h3>
-        <ul>
-            <li>Juicios ejecutivos mercantiles:
+        <div class="grid-container">
+            <div class="category">
+                <h3>JUICIOS DE SEGUROS</h3>
                 <ul>
-                    <li>Pagarés, cheques, contratos.</li>
+                    <li>Cobro a Compañías de Seguros</li>
                 </ul>
-            </li>
-            <li>Juicios ordinarios mercantiles</li>
-            <li>Juicios orales mercantiles</li>
-        </ul>
+            </div>
 
-        <h3>DIVORCIO</h3>
-        <ul>
-            <li>A petición de un cónyuge</li>
-            <li>A petición de 2 Cónyuges</li>
-            <li>Capitulaciones Matrimoniales</li>
-        </ul>
+            <div class="category">
+                <h3>MERCANTIL</h3>
+                <ul>
+                    <li>Juicios ejecutivos mercantiles</li>
+                    <li>Juicios ordinarios mercantiles</li>
+                    <li>Juicios orales mercantiles</li>
+                </ul>
+            </div>
 
-        <h3>ASUNTOS PENALES</h3>
-        <ul>
-            <li>Fraudes</li>
-            <li>Robos</li>
-            <li>Lesiones</li>
-            <li>Homicidios</li>
-            <li>Abuso sexual</li>
-            <li>Violación Sexual</li>
-        </ul>
+            <div class="category">
+                <h3>DIVORCIO</h3>
+                <ul>
+                    <li>A petición de un cónyuge</li>
+                    <li>A petición de dos cónyuges</li>
+                    <li>Capitulaciones Matrimoniales</li>
+                </ul>
+            </div>
 
-        <h3>ASUNTOS CIVILES</h3>
-        <ul>
-            <li>Juicios hipotecarios</li>
-            <li>Juicios de arrendamiento</li>
-            <li>Juicios orales civiles</li>
-            <li>Juicios de cumplimiento e incumplimiento de contratos (obligaciones y deberes)</li>
-            <li>Contratos</li>
-        </ul>
+            <div class="category">
+                <h3>PENAL</h3>
+                <ul>
+                    <li>Fraudes</li>
+                    <li>Robos</li>
+                    <li>Lesiones</li>
+                    <li>Homicidios</li>
+                    <li>Abuso sexual</li>
+                    <li>Violación Sexual</li>
+                </ul>
+            </div>
 
-        <h3>ASUNTOS ADMINISTRATIVOS Y FISCALES</h3>
-        <ul>
-            <li>Impugnación de Multas</li>
-            <li>Juicio de Nulidad</li>
-            <li>Juicios ante el SAT</li>
-            <li>Juicios ante la SHCP</li>
-            <li>Juicios de Amparo</li>
-        </ul>
+            <div class="category">
+                <h3>CIVIL</h3>
+                <ul>
+                    <li>Juicios hipotecarios</li>
+                    <li>Juicios de arrendamiento</li>
+                    <li>Juicios orales civiles</li>
+                </ul>
+            </div>
 
-        <h3>AMPARO</h3>
-        <ul>
-            <li>Juicio Amparo Indirecto</li>
-            <li>Juicio Amparo Directo</li>
-        </ul>
+            <div class="category">
+                <h3>ADMINISTRATIVO Y FISCAL</h3>
+                <ul>
+                    <li>Impugnación de Multas</li>
+                    <li>Juicio de Nulidad</li>
+                    <li>Juicios ante el SAT y SHCP</li>
+                </ul>
+            </div>
 
-        <div class="contact-info">
-            <h2>CONTACTOS</h2>
-            <p>+52 55 3733 9691</p>
+            <div class="category">
+                <h3>AMPARO</h3>
+                <ul>
+                    <li>Juicio Amparo Indirecto</li>
+                    <li>Juicio Amparo Directo</li>
+                </ul>
+            </div>
         </div>
+    </section>
 
-        <h2>OFRECEMOS SER</h2>
-        <ul>
-            <li>Expertos en Materias</li>
-            <li>Abogados Litigantes</li>
-            <li>Asesorías Especializadas</li>
-            <li>Representación Jurídica</li>
-        </ul>
+    <section class="contact">
+        <h2>CONTACTO</h2>
+        <p>📞 +52 55 3733 9691</p>
+    </section>
 
-        <div class="hours">
-            <h2>HORARIOS</h2>
-            <p>Para materia Penal 24/7</p>
-            <p>Para las demás materias:</p>
-            <p>Lunes a Viernes</p>
-            <p>9:30 a.m. - 17:30 p.m.</p>
-        </div>
+    <section class="horarios">
+        <h2>HORARIOS</h2>
+        <p>🕒 Penal: 24/7</p>
+        <p>🕒 Otras materias: Lunes a Viernes | 9:30 a.m. - 17:30 p.m.</p>
+    </section>
 
+    <section class="specialization">
         <h2>CAMPOS DE ESPECIALIZACIÓN</h2>
-        <table class="specialization-table">
+        <table>
             <thead>
                 <tr>
-                    <th>CIVIL MERCANTIL</th>
-                    <th>PENAL</th>
-                    <th>ADMINISTRATIVO FISCAL</th>
+                    <th>Civil Mercantil</th>
+                    <th>Penal</th>
+                    <th>Administrativo Fiscal</th>
                 </tr>
             </thead>
             <tbody>
@@ -164,6 +113,6 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+    </section>
 </body>
 </html>
