@@ -1,100 +1,232 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
+  background-color: #000; /* Fondo negro */
+  color: #FFF; /* Letras blancas por defecto */
+  font-size: 16px; /* Tamaño de fuente base ajustado */
 }
 
 header {
   text-align: center;
   padding: 20px;
-  background-color: #000;
+  background-color: #000; /* Fondo negro */
+  color: #FFD700; /* Letras doradas */
 }
 
-h1, h2 {
-  margin: 0;
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+h1, h2, h3 {
+  color: #FFD700; /* Títulos y subtítulos en dorado */
 }
 
 h1 {
-  font-size: 2.5em;
-  color: gold;
+  font-size: 2em; /* Tamaño de fuente ajustado para el título principal */
 }
 
 h2 {
-  font-size: 1.8em;
-  color: gold;
+  font-size: 1.75em; /* Tamaño de fuente ajustado para los subtítulos */
 }
 
-h3 {
-  color: #2980b9;
+h2.centered {
+  text-align: center; /* Centrar el subtítulo "Áreas de trabajo" */
 }
 
-p {
-  font-size: 1.2em;
+h3.white-text {
+  color: #FFF; /* Subtítulos de las áreas en blanco */
+  font-size: 1.25em; /* Tamaño de fuente ajustado para los títulos de categoría */
 }
 
 .intro {
   text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #fff;
-  background-color: #222;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 80%;
-  border-radius: 10px;
-}
-
-.content {
-  padding: 20px;
+  background-color: #000; /* Fondo negro */
+  color: #FFF; /* Letras blancas */
+  border-bottom: 2px solid #333; /* Separación */
+  font-size: 1em; /* Tamaño de fuente ajustado para el texto de introducción */
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px; /* Espaciado entre categorías ajustado */
+  padding: 20px;
 }
 
 .category {
-  background-color: #222;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
+  background-color: #333; /* Fondo gris oscuro */
+  padding: 15px; /* Espacio interno ajustado */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #FFF; /* Letras blancas */
+  border: 1px solid #444; /* Borde para separación */
+  font-size: 1em; /* Tamaño de fuente ajustado para el contenido de las categorías */
 }
 
 .category ul {
-  list-style: none;
+  padding-left: 20px; /* Espaciado para las listas */
+}
+
+.category ul li {
+  margin: 8px 0; /* Espaciado entre elementos de la lista ajustado */
+}
+
+.banner-slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 100%;
+  height: 300px; /* Altura del banner de imágenes */
+  object-fit: cover;
+  margin-right: 10px; /* Separación entre imágenes */
+}
+
+.registration-banner {
+  background-color: #333; /* Fondo gris oscuro */
+  padding: 20px;
+  margin: 20px 0;
+  color: #FFF; /* Letras blancas */
+  max-width: 600px; /* Ancho máximo del banner de registro */
+  margin: 20px auto; /* Centrar el banner */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 1px solid #444; /* Borde para separación */
+  font-size: 1em; /* Tamaño de fuente ajustado para el formulario */
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre los elementos del formulario ajustado */
+}
+
+.registration-form label {
+  font-weight: bold;
+  color: #FFF; /* Letras blancas */
+}
+
+.registration-form input, .registration-form textarea {
+  padding: 10px; /* Espacio interno ajustado */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #444; /* Fondo gris oscuro */
+  color: #FFF; /* Texto blanco */
+  font-size: 1em; /* Tamaño de fuente ajustado para los inputs */
+}
+
+.registration-form button {
+  padding: 10px;
+  background-color: #007BFF; /* Botón azul */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #FFF; /* Texto blanco */
+  font-size: 1em; /* Tamaño de fuente ajustado para el botón */
+}
+
+.registration-form button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+.contact, .horarios, .offer, .specialization {
+  padding: 20px;
+  background-color: #000; /* Fondo negro */
+  margin: 20px 0;
+  color: #FFF; /* Letras blancas */
+  border-top: 2px solid #333; /* Separación */
+  font-size: 1em; /* Tamaño de fuente ajustado para estos apartados */
+}
+
+.contact a {
+  color: #FFD700; /* Enlace en dorado */
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.offer ul {
+  list-style-type: none;
   padding: 0;
 }
 
-.category li {
-  padding: 5px 0;
+.offer ul li {
+  margin: 10px 0; /* Espaciado entre elementos de la lista ajustado */
+  font-size: 1.1em; /* Tamaño de fuente ajustado para "Lo que ofrecemos ser" */
 }
 
-.contact, .horarios, .specialization {
-  text-align: center;
-  padding: 20px;
-  background-color: #222;
-  margin: 20px auto;
-  max-width: 80%;
-  border-radius: 10px;
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+
+  .logo {
+      width: 150px;
+  }
+
+  .slides img {
+      height: 200px; /* Altura del banner de imágenes en móviles */
+  }
+}
+
+/* Estilos para la tabla */
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  text-align: center;
+  font-size: 1em; /* Tamaño de fuente ajustado para la tabla */
 }
 
 th, td {
+  padding: 10px; /* Espacio interno ajustado */
+  text-align: center;
   border: 1px solid #ddd;
-  padding: 10px;
 }
 
 th {
-  background-color: #2980b9;
-  color: white;
+  background-color: #333; /* Fondo gris oscuro */
+  color: #FFD700; /* Letras doradas */
 }
 
+td {
+  background-color: #444; /* Fondo gris más claro */
+  color: #FFF; /* Texto blanco */
+}
