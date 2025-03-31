@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000; /* Fondo negro */
+  background-color: #0a1f44; /* Fondo azul rey */
   color: #FFF; /* Letras blancas por defecto */
   font-size: 16px; /* Tamaño de fuente base ajustado */
 }
@@ -11,7 +11,7 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  background-color: #000; /* Fondo negro */
+  background-color: #0a1f44; /* Fondo azul rey */
   color: #FFD700; /* Letras doradas */
 }
 
@@ -44,7 +44,7 @@ h3.white-text {
 .intro {
   text-align: center;
   padding: 20px;
-  background-color: #000; /* Fondo negro */
+  background-color: #0a1f44; /* Fondo azul rey */
   color: #FFF; /* Letras blancas */
   border-bottom: 2px solid #333; /* Separación */
   font-size: 1em; /* Tamaño de fuente ajustado para el texto de introducción */
@@ -142,7 +142,7 @@ h3.white-text {
 
 .contact, .horarios, .offer, .specialization {
   padding: 20px;
-  background-color: #000; /* Fondo negro */
+  background-color: #0a1f44; /* Fondo azul rey */
   margin: 20px 0;
   color: #FFF; /* Letras blancas */
   border-top: 2px solid #333; /* Separación */
